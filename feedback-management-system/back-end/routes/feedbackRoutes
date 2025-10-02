@@ -1,0 +1,30 @@
+const express = require('express');
+const router = express.Router();
+const {
+  getAllFeedbacks,
+  createFeedback,
+  addReply,
+  updateReply,
+  deleteReply,
+  deleteFeedback
+} = require('../controllers/feedbackController');
+
+// GET /api/feedbacks - Get all feedbacks
+router.get('/', getAllFeedbacks);
+
+// POST /api/feedbacks - Create new feedback
+router.post('/', createFeedback);
+
+// POST /api/feedbacks/:id/reply - Add reply to feedback
+router.post('/:id/reply', addReply);
+
+// PUT /api/feedbacks/:id/reply/:replyId - Update reply
+router.put('/:id/reply/:replyId', updateReply);
+
+// DELETE /api/feedbacks/:id/reply/:replyId - Delete reply
+router.delete('/:id/reply/:replyId', deleteReply);
+
+// DELETE /api/feedbacks/:id - Delete feedback
+router.delete('/:id', deleteFeedback);
+
+module.exports = router;
