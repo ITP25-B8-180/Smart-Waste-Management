@@ -1,19 +1,19 @@
-# Route Optimization System
+# Transport Management System
 
-This module handles route planning, optimization, and GPS integration for waste collection vehicles.
+This module handles vehicle management, route planning, driver management, and transport scheduling.
 
 ## Features (To be implemented)
 
-- Intelligent route planning
-- Real-time GPS tracking
-- Route optimization algorithms
-- Driver management
-- Fuel efficiency tracking
+- Vehicle fleet management
+- Route planning and optimization
+- Driver management and scheduling
+- Transport cost tracking
+- Real-time vehicle tracking
 
 ## Structure
 
 ```
-route-optimization-system/
+transport-management-system/
 ├── backend/          # Node.js/Express backend
 ├── frontend/         # React frontend
 └── README.md
@@ -28,13 +28,14 @@ route-optimization-system/
 
 ## API Endpoints (To be defined)
 
-- `/api/routes` - Route management
-- `/api/optimization` - Route optimization
-- `/api/tracking` - GPS tracking
+- `/api/vehicles` - Vehicle management
+- `/api/routes` - Route planning
 - `/api/drivers` - Driver management
+- `/api/tracking` - Real-time tracking
 
 ## Technologies
 
 - Backend: Node.js, Express.js, MongoDB
 - Frontend: React, TypeScript, Tailwind CSS
 - Maps: Google Maps API / OpenStreetMap
+- Additional: GPS tracking, Route optimization algorithms

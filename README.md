@@ -12,12 +12,12 @@ A comprehensive smart waste management system built using MERN stack, designed t
 - Financial reporting and analytics
 - Invoice generation
 
-### 2. Waste Tracking System (`waste-tracking-system/`)
+### 2. Event Management System (`event-management-system/`)
 **Responsible Team Member**: [Team Member Name]
-- Waste collection tracking
-- Bin monitoring
-- Collection schedules
-- Waste categorization
+- Event planning and scheduling
+- Event registration
+- Event tracking
+- Event analytics and reporting
 
 ### 3. User Management System (`user-management-system/`)
 **Responsible Team Member**: [Team Member Name]
@@ -26,19 +26,19 @@ A comprehensive smart waste management system built using MERN stack, designed t
 - Role-based access control
 - User analytics
 
-### 4. Route Optimization System (`route-optimization-system/`)
+### 4. Transport Management System (`transport-management-system/`)
 **Responsible Team Member**: [Team Member Name]
+- Vehicle management
 - Route planning and optimization
-- GPS integration
-- Real-time tracking
-- Efficiency analytics
+- Driver management
+- Transport scheduling
 
-### 5. Admin Dashboard System (`admin-dashboard-system/`)
+### 5. Feedback Management System (`feedback-management-system/`)
 **Responsible Team Member**: [Team Member Name]
-- System overview and analytics
-- Admin controls and settings
-- System monitoring
-- Reports generation
+- User feedback collection
+- Feedback analysis
+- Rating systems
+- Feedback reporting
 
 ## Project Structure
 
@@ -47,16 +47,16 @@ smart-waste-management/
 ├── financial-management-system/
 │   ├── backend/
 │   └── financial-frontend/
-├── waste-tracking-system/
+├── event-management-system/
 │   ├── backend/
 │   └── frontend/
 ├── user-management-system/
 │   ├── backend/
 │   └── frontend/
-├── route-optimization-system/
+├── transport-management-system/
 │   ├── backend/
 │   └── frontend/
-├── admin-dashboard-system/
+├── feedback-management-system/
 │   ├── backend/
 │   └── frontend/
 └── README.md
@@ -93,7 +93,7 @@ Each module is independent and can be developed separately. Follow the setup ins
 ## Team Members
 
 - **Financial Management**: [Your Name]
-- **Waste Tracking**: [Team Member Name]
+- **Event Management**: [Team Member Name]
 - **User Management**: [Team Member Name]
-- **Route Optimization**: [Team Member Name]
-- **Admin Dashboard**: [Team Member Name]
+- **Transport Management**: [Team Member Name]
+- **Feedback Management**: [Team Member Name]
