@@ -1,0 +1,49 @@
+const mongoose = require('mongoose');
+
+const complaintSchema = new mongoose.Schema({
+  name: {
+    type: String,
+    required: true
+  },
+  email: {
+    type: String,
+    required: true
+  },
+  phone: {
+    type: String
+  },
+  address: {
+    type: String,
+    required: true
+  },
+  issueType: {
+    type: String,
+    required: true,
+    enum: ['Bin Issues', 'Transport Issues', 'Finance Issues', 'Others']
+  },
+  weight: {
+    type: Number
+  },
+  problem: {
+    type: String,
+    required: true
+  },
+  files: [{
+    type: String
+  }],
+  status: {
+    type: String,
+    enum: ['pending', 'in-progress', 'resolved'],
+    default: 'pending'
+  },
+  date: {
+    type: Date,
+    default: Date.now
+  },
+  notes: {
+    type: String,
+    default: ''
+  }
+});
+
+module.exports = mongoose.model('Complaint', complaintSchema);
